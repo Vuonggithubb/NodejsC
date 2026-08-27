@@ -1,7 +1,7 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": "1",
+  "description": "nodejs",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,13 +11,14 @@
     "type": "git",
     "url": "git+https://github.com/Vuonggithubb/NodejsC.git"
   },
-  "keywords": [
-    "nodejs"
-  ],
-  "author": "Vuong",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Vuonggithubb/NodejsC/issues"
   },
-  "homepage": "https://github.com/Vuonggithubb/NodejsC#readme"
+  "homepage": "https://github.com/Vuonggithubb/NodejsC#readme",
+  "dependencies": {
+    "ejs": "3.1.8",
+    "express": "4.18.2"
+  }
 }
