@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vuonggithubb/NodejsC.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Vuong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vuonggithubb/NodejsC/issues"
+  },
+  "homepage": "https://github.com/Vuonggithubb/NodejsC#readme"
+}
