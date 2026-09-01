@@ -1,19 +1,21 @@
 const express = require("express");
 const path = require("path");
+require("dotenv").config();
+const msql = require("mysql2");
+const configViewEngine = require("./config/viewEngine");
+const webRoutes = require("./routes/web");
+const connection = require("./config/database");
 
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT;
 const hostname = process.env.HOST_NAME || "localhost";
 
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
+configViewEngine(app);
 
-app.get("/", (req, res) => {
-  res.send("Hellommmkjkjk World!");
-});
+app.use("/", webRoutes);
 
-app.get("/abc", (req, res) => {
-  res.render("sample.ejs");
+connection.query("select * from Users u", function (err, results, fields) {
+  console.log(results); // results contains rows returned by server
 });
 
 app.listen(port, hostname, () => {
